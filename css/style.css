@@ -1,0 +1,106 @@
+
+/* dans skeleton body{
+    background-color: #1E1E1E03;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+} */
+h1{
+    font-size: 32px;
+    line-height: 38px;
+}
+.button, .apprenant{
+    text-decoration: none;
+    color: #FFFFFF;
+    border-radius: 5px;
+    background: #CE0033;
+    text-transform: none;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.button:focus, .apprenant:focus{
+    color: white;
+}
+header{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 2;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+#rules{
+    width: 400px;
+}
+.random{
+    height: 100px;
+}
+ul{
+    list-style-image: url("../images/bullet.png");
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* accordéon */
+input{
+    position:absolute;
+    opacity: 0;
+    z-index:-1;
+}
+.accordion{
+    margin: 40px 0px 40px 0px;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.25);
+}
+.accordion-label{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    font-size: 24px;
+    line-height: 28px;
+    cursor: pointer;
+}
+.accordion-content{
+    max-height: 0;
+    padding: 0 1em;
+    transition: all 0.35s;
+}
+input:checked ~ .accordion-content{
+    max-height: 100vh;
+    padding: 1em;
+}
+/* accordéon */
+
+@media (max-width: 900px){
+ .row {
+    display:flex;
+    flex-direction: column;
+ }
+ .button{
+    display: block;
+    margin: auto;
+    width: fit-content;
+ }
+ #rules{
+    width:fit-content;
+ }
+ header{
+    font-size: 28px;
+ }
+}

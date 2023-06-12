@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <!-- Les bases d'une page HTML
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Promo Up2Dev - Montreuil</title>
+  <meta name="description" content="Notre Charte de Promo">
+  <meta name="author" content="Promo Simplon La Poste">
+
+  <!-- Métadonnées spécifique Mobiles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Liaisons des Polices
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- Liaisons des fichiers CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/skeleton.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Liaisons du fichier JS si vous faites le bonus
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- TODO -->
+  <script src="script.js" defer></script>
+
+  <!-- Liaison du Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- TODO -->
+<link rel="shorcut icon" href=images/favicon.png  />
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+    <span>Promo Up2Dev - Montreuil</span>
+    </div>
+  </header>
+
+
+  <!-- Structure principale de la page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <main class="container">
+
+    <section>
+      <div class="row">
+        <div class="column">
+          <h1>Notre charte de promo</h1>
+          <p id="rules">Ces règles nous unissent et ont été <strong>inventées</strong> et sont <strong>officieuses</strong> ! Les
+            voici, prenez plaisir à les parcourir ! &#x1F525;</p>
+        </div>
+        <div>
+          <a href="https://github.com/" class="button" target="_blank">Accès Github</a>
+        </div>
+      </div>
+    </section>
+    <br>
+    <section clas="charte">
+      <div class="accordion">
+        <input type="checkbox" id="tab1" />
+        <label for="tab1" class="accordion-label">Réussite collective</label>
+        <div class="accordion-content">
+        <ul>
+          <li>Etre solidaire, ne laissez personne derrière.</li>
+          <li>Partager ses connaissances pour avancer ensemble.</li>
+          <li>Ecouter les formateurs et ne pas les contredire.</li>
+        </ul>
+      </div>
+      </div>
+      <div class="accordion">
+        <input type="checkbox" id="tab2" />
+        <label for="tab2" class="accordion-label">Vivre ensemble</label>
+        <div class="accordion-content">
+        <ul>
+          <li>Respecter le rythme de chacun.</li>
+          <li>Ne pas effacer le code du voisin pour rigoler.</li>
+          <li>Ne pas tout saloper.</li>
+        </ul>
+        </div>
+      </div>
+      </div>
+      <div class="accordion">
+        <input type="checkbox" id="tab3" />
+        <label for="tab3" class="accordion-label">Pour le fun</label>
+        <div class="accordion-content">
+        <ul>
+          <li>Savoir trouver des instants pour souffler.</li>
+          <li>Partager des moments conviviaux.</li>
+          <li>Sourire.</li>
+        </ul>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    <br>
+
+    <section>
+      Grâce à ce règlement on obtient le code suivant :
+      <pre><code style="overflow: auto;">
+      var compétencesDePromo = [];
+      var humeurPromo = 'Au top';
+      if('règles comprises' == true && 'règles appliquées' == true) {
+      compétencesDePromo.push(new Compétence());
+      } else {
+      humeurPromo = 'Pas top';
+      }
+      </code></pre>
+    </section>
+    <section class="random">
+      <button class="apprenant"  id="tirage">Random apprenant</button>
+    </section>
+
+  </main>
+
+  <!-- Fin du document (fermeture des balises)
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
